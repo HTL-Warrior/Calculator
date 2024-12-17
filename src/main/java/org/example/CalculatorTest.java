@@ -15,8 +15,8 @@ class CalculatorTest {
     }
 
     @Test
-    void multiply() {
-        assertEquals(9,calculator.multiply(3,3));
-        assertNotEquals(9,calculator.multiply(5,5));
+    void add() {
+        assertEquals(7, calculator.add(3, 4));
+        assertNotEquals(9, calculator.add(5, 5));
     }
 }
