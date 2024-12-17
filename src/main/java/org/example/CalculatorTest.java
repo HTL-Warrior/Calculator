@@ -31,6 +31,12 @@ class CalculatorTest {
         assertEquals(9,calculator.multiply(3,3));
         assertNotEquals(9,calculator.multiply(5,5));
     }
-    
+
+    @Test
+    void divide() {
+        assertEquals(7,calculator.divide(28,4));
+        assertNotEquals(9,calculator.divide(5,5));
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(12, 0));
+    }
 
 }
